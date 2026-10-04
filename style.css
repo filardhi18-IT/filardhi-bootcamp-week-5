@@ -1,0 +1,449 @@
+/* Base Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333333;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.2s ease;
+}
+
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+
+/* Main Layout Wrapper */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 4rem;
+}
+
+/* Bagian 1 & 2: Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.hero-header-box {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+/* Requirement Poin 1: Font Arial, size 14px, warna hitam */
+.hero-text {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    color: #000000 !important;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    max-width: 700px;
+    height: 20vh;
+    max-height: 200px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 4px 4px 0px #000000;
+    background-color: #000000;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.01);
+}
+
+/* Bagian 3: Principles Section */
+.principles-section {
+    padding: 2.5rem 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Requirement Poin 3: Heading 2 "our principle" dengan font Arial, ukuran 14px, warna hitam */
+.principle-heading {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    color: #000000 !important;
+    font-weight: 700;
+    text-transform: lowercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid #000000;
+    background-color: #f5f5f5;
+}
+
+.principle-content-card {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.principle-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+    border-left: 3px solid #ffffff;
+    padding-left: 1rem;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.principle-item {
+    background-color: #111111;
+    border: 1px solid #333333;
+    padding: 1.5rem;
+    border-radius: 4px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.principle-item:hover {
+    transform: translateY(-3px);
+    border-color: #ffffff;
+}
+
+.principle-number {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #888888;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.principle-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.principle-item p {
+    font-size: 0.875rem;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+/* Bagian 4: Fitur Section & Foto Bersama Pemuda */
+.features-section {
+    padding: 2.5rem 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.features-header {
+    margin-bottom: 2rem;
+}
+
+.features-header h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.features-header p {
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* Layout 2 Kolom: Kiri Fitur, Kanan Foto Bersama Pemuda */
+.features-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.features-interactive-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* List 6 Tombol Fitur */
+.features-buttons-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.feature-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.feature-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.feature-btn.active {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 4px 4px 0px #666666;
+}
+
+.feature-btn .badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    color: #000000;
+    font-weight: bold;
+}
+
+.feature-btn.active .badge {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Display Detail Card */
+.feature-detail-card {
+    background-color: #f9f9f9;
+    border: 2px solid #000000;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 4px 4px 0px #000000;
+    min-height: 200px;
+    transition: opacity 0.25 ease;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.detail-tag {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.detail-header h3 {
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.detail-description {
+    font-size: 0.95rem;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.detail-bullets {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: #444444;
+    font-size: 0.875rem;
+}
+
+.detail-bullets li {
+    margin-bottom: 0.4rem;
+}
+
+/* Sisi Kanan: Foto Bersama Pemuda */
+.features-image-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.youth-image-container {
+    border: 2px solid #000000;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px #000000;
+    background-color: #000000;
+}
+
+.youth-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-caption {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #333333;
+}
+
+.image-caption strong {
+    color: #ffffff;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2.5rem 1.5rem;
+    border-top: 2px solid #000000;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-brand .logo {
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.footer-brand p {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+/* Responsif untuk Tablet dan Mobile */
+@media (max-width: 900px) {
+    .features-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-buttons-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .features-buttons-list {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-header-box {
+        padding: 1rem;
+    }
+
+    .principle-content-card {
+        padding: 1.5rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
